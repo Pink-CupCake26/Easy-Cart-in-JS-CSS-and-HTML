@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Cute Cart!!</title>
+    <style>
+       .bord{
+        border-width: 25%;
+        border-top:25%;
+        display:flex;
+        margin: 0;
+        padding: 0;
+       }
+       .bord2{
+        border-top:  50%;
+        border-left: 50%;
+        display: flex;
+        align-items: center;
+       }
+       body{
+        background-image: url('pink.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+       } 
+       h1{
+        color: black;
+        font-family: sans-serif;
+        text-align: center;
+       }
+       .btn{
+        border-radius: 50%;
+        background-color: #ec26a0; 
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        height: 40px;
+        width:40px;
+        cursor: pointer;
+       }
+       .btn2{
+        border-radius: 50%;
+        background-color: #ec26a0; 
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        height: 40px;
+        width:40px;
+        cursor: pointer;
+       }
+       .btn3{
+        border-radius: 50%;
+        background-color: red; 
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        height: 45px;
+        width:45px;
+        cursor: pointer;
+       }
+       .text1{
+        background-color: #ec8ac7;
+        height: 30px;
+        width: 30px;
+        font-size: 25px;
+       }
+       .text2{
+        background-color: #ec8ac7;
+        height: 70px;
+        width: 200px;
+        font-size: 70px;
+       }
+    </style>
+    </head>
+    <body>
+        <h1>Welcome to my Cute Cart!!</h1>
+        <div class="bord">
+     <center>
+        <div id="div1" class="bord2">
+        <img src="lipgloss.jpg" style=" width: 100px; height: 100px;" >&nbsp;
+        <h2 > Pink Lip Gloss</h2>&nbsp;&nbsp;&nbsp;
+        <h3>Price:150</h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn" onclick="q1plus()">+</button>&nbsp;&nbsp;
+        <h3>Quantity:  </h3>&nbsp;&nbsp;&nbsp;
+        <input type="text" class="text1" id="text1" value="0"/>&nbsp;&nbsp;
+        <button class="btn2" onclick= "q1minus()" >-</button>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+       &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        <button class="btn3" onclick="remove1()">X</button>
+        </div>
+    </br> 
+        <div id="div3" class="bord2">
+        <img src="eyeshade.jpg" style=" width: 100px; height: 100px;">&nbsp;
+        <h2>Sparling EyeShade Pallet</h2>&nbsp;&nbsp;&nbsp;
+        <h3>Price:500</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn" onclick="q2plus()">+</button>&nbsp;&nbsp;
+        <h3>Quantity:  </h3>&nbsp;&nbsp;&nbsp;
+        <input type="text" class="text1" id="text2" value="0"/>&nbsp;&nbsp;
+        <button class="btn2"  onclick="q2minus()">-</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+         <button class="btn3" onclick="remove2()">X</button>
+        </div>
+    </br>
+        <div id="div3" class="bord2">
+        <img src="keychain.jpg" style=" width: 100px; height: 100px;">&nbsp;
+        <h2>Unicorn KeyChain</h2>&nbsp;&nbsp;&nbsp;
+        <h3>Price:100</h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn" onclick="q3plus()">+</button>&nbsp;&nbsp;
+        <h3>Quantity:  </h3>&nbsp;&nbsp;&nbsp;
+        <input type="text" class="text1" id="text3" value="0"/>&nbsp;&nbsp;
+        <button class="btn2"  onclick="q3minus()">-</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+         <button class="btn3" onclick="remove3()">X</button>
+        </div>
+    </br>
+    </center>
+</div>
+<center>
+    <br><br>
+<h2>Total Amount: </h2>&nbsp;&nbsp;&nbsp;
+<input type="text" class="text2" id="text4" value="0"/>
+</center>
+    </body>
+    <script type="text/javascript" src="cart.js"></script>
+</html>
